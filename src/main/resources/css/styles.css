@@ -1,0 +1,102 @@
+/*
+ * FEMZYK Weather - application stylesheet.
+ * CS 1103-01, Programming Assignment Unit 8.
+ * The sky gradient itself is painted in code (WeatherApp.applyTheme),
+ * because it changes with the time of day; this sheet styles the
+ * controls on top of it.
+ */
+
+.label {
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.55), 3, 0.2, 0, 1);
+}
+
+.text-field {
+    -fx-background-color: rgba(255, 255, 255, 0.94);
+    -fx-background-radius: 22;
+    -fx-padding: 9 16 9 16;
+    -fx-font-size: 14px;
+    -fx-prompt-text-fill: #5B6B7B;
+    -fx-text-fill: #16283C;
+    -fx-border-color: transparent;
+}
+
+.text-field:focused {
+    -fx-border-color: #FFC53D;
+    -fx-border-width: 1.6;
+}
+
+.button {
+    -fx-background-color: #F2A33C;
+    -fx-text-fill: #1B2A3A;
+    -fx-background-radius: 22;
+    -fx-padding: 9 20 9 20;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.35), 4, 0.2, 0, 2);
+}
+
+.button:hover {
+    -fx-background-color: #FFB959;
+}
+
+.button:pressed {
+    -fx-background-color: #D98A25;
+}
+
+.button:disabled {
+    -fx-opacity: 0.55;
+}
+
+.toggle-button {
+    -fx-background-color: rgba(255, 255, 255, 0.22);
+    -fx-text-fill: white;
+    -fx-background-radius: 16;
+    -fx-padding: 7 14 7 14;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+.toggle-button:selected {
+    -fx-background-color: #F2A33C;
+    -fx-text-fill: #1B2A3A;
+}
+
+.list-view {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-padding: 2;
+}
+
+.list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-padding: 5 8 5 8;
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.14);
+    -fx-background-radius: 8;
+}
+
+.list-cell:filled:selected {
+    -fx-background-color: rgba(255, 255, 255, 0.24);
+    -fx-background-radius: 8;
+}
+
+.scroll-bar {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: rgba(255, 255, 255, 0.30);
+    -fx-background-radius: 8;
+}
+
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button {
+    -fx-opacity: 0;
+}
